@@ -1,6 +1,6 @@
-# PhantomDNS — DNS Security & Privacy Gateway
+# HydraDNS — DNS Security & Privacy Gateway
 
-PhantomDNS is a **DNS-layer security and privacy gateway** designed to run seamlessly on both **lightweight hardware** (Raspberry Pi, NUC) and **cloud environments**. It acts as a transparent DNS forwarder/resolver with built-in security, privacy, and policy enforcement.
+HydraDNS is a **DNS-layer security and privacy gateway** designed to run seamlessly on both **lightweight hardware** (Raspberry Pi, NUC) and **cloud environments**. It acts as a transparent DNS forwarder/resolver with built-in security, privacy, and policy enforcement.
 
 ## Overview
 
@@ -8,7 +8,7 @@ PhantomDNS is a **DNS-layer security and privacy gateway** designed to run seaml
 * Enforces security policies
 * Blocks malware, phishing, trackers, and ads
 * Provides administrators with clear reports and CLI-based management
-# PhantomDNS — DNS Security & Privacy Gateway
+# HydraDNS — DNS Security & Privacy Gateway
 
 ## Key Features
 
@@ -25,7 +25,7 @@ PhantomDNS is a **DNS-layer security and privacy gateway** designed to run seaml
   Import and update domain blocklists automatically, with caching for high-speed lookups.
 
 * **Shell Access & CLI Management**
-  Configure and control PhantomDNS using a structured CLI shell, ideal for power users and automation.
+  Configure and control HydraDNS using a structured CLI shell, ideal for power users and automation.
 
 * **Central Controller & Admin Dashboard (EE)**
   In enterprise deployments, a central dashboard provides unified policy management, visibility, and analytics across multiple sites.
@@ -55,6 +55,6 @@ The open-source foundation includes:
 * Structured logging
 * Docker deployment
 
-The CE is aimed at **adoption, transparency, and portfolio credibility** while showcasing PhantomDNS's core features.
+The CE is aimed at **adoption, transparency, and portfolio credibility** while showcasing HydraDNS's core features.
 
 <img width="952" height="1422" alt="96133290-f9b8-4184-8a6f-ee01af5345df_changed" src="https://github.com/user-attachments/assets/2bc5d75b-b692-437e-a9ad-0f528e02e39f" />
