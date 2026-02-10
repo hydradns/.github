@@ -56,5 +56,3 @@ The open-source foundation includes:
 * Docker deployment
 
 The CE is aimed at **adoption, transparency, and portfolio credibility** while showcasing HydraDNS's core features.
-
-<img width="952" height="1422" alt="96133290-f9b8-4184-8a6f-ee01af5345df_changed" src="https://github.com/user-attachments/assets/2bc5d75b-b692-437e-a9ad-0f528e02e39f" />
