@@ -2,13 +2,14 @@
 
 HydraDNS is a **DNS-layer security and privacy gateway** designed to run seamlessly on both **lightweight hardware** (Raspberry Pi, NUC) and **cloud environments**. It acts as a transparent DNS forwarder/resolver with built-in security, privacy, and policy enforcement.
 
+The main project lives at [hydradns/hydradns](https://github.com/hydradns/hydradns) — a single monorepo containing the core DNS engine, dashboard, CLI, and scanner.
+
 ## Overview
 
 * Intercepts DNS queries transparently
 * Enforces security policies
 * Blocks malware, phishing, trackers, and ads
 * Provides administrators with clear reports and CLI-based management
-# HydraDNS — DNS Security & Privacy Gateway
 
 ## Key Features
 
@@ -27,32 +28,15 @@ HydraDNS is a **DNS-layer security and privacy gateway** designed to run seamles
 * **Shell Access & CLI Management**
   Configure and control HydraDNS using a structured CLI shell, ideal for power users and automation.
 
-* **Central Controller & Admin Dashboard (EE)**
-  In enterprise deployments, a central dashboard provides unified policy management, visibility, and analytics across multiple sites.
-
 * **Logging & Monitoring**
-
-  * Structured logging for observability.
-  * Anonymized client IPs (in CE) for privacy compliance.
-  * Extended logging in EE for enterprise auditing.
+  Structured logging for observability, with anonymized client IPs for privacy compliance.
 
 * **Resilient & Performant**
+  Connection pool with multiple upstream resolvers for failover and load balancing.
 
-  * Connection pool with multiple upstream resolvers for failover and load balancing.
-  * Real-time enforcement with **sub-millisecond lookups**.
-  * End-to-end DNS integrity with less than **5ms added latency**.
+* **Bypass-Resistant**
+  Detects and blocks client-side attempts to route around policy using DNS-over-HTTPS or DNS-over-TLS to third-party resolvers, so devices on the network can't silently escape enforcement.
 
-* **Privacy-First by Default**
-  DNS logs anonymize client IPs in the Community Edition. Support for encrypted upstream resolvers (DoH/DoT) is built in.
+## Open Source
 
-## Community Edition (CE)
-
-The open-source foundation includes:
-
-* SQLite-backed policy storage
-* Blocklists
-* CLI shell
-* Structured logging
-* Docker deployment
-
-The CE is aimed at **adoption, transparency, and portfolio credibility** while showcasing HydraDNS's core features.
+HydraDNS is licensed under GPL-3.0 and is complete and usable on its own — see the [monorepo](https://github.com/hydradns/hydradns) for setup, docs, and contribution guidelines.
