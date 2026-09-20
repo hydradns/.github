@@ -1,58 +1,24 @@
-# HydraDNS — DNS Security & Privacy Gateway
+# HydraDNS
 
-HydraDNS is a **DNS-layer security and privacy gateway** designed to run seamlessly on both **lightweight hardware** (Raspberry Pi, NUC) and **cloud environments**. It acts as a transparent DNS forwarder/resolver with built-in security, privacy, and policy enforcement.
+A self-hosted DNS firewall you can manage by talking to an AI agent. It blocks
+ads, malware and trackers at the DNS level like Pi-hole, rebuilt in Go with an
+API-first control plane and a built-in Model Context Protocol server, so Claude
+or any MCP agent can run your network for you.
 
-## Overview
+## Repositories
 
-* Intercepts DNS queries transparently
-* Enforces security policies
-* Blocks malware, phishing, trackers, and ads
-* Provides administrators with clear reports and CLI-based management
-# HydraDNS — DNS Security & Privacy Gateway
+- **[hydradns](https://github.com/hydradns/hydradns)** the product: DNS engine,
+  gRPC control plane, web dashboard, CLI and MCP server. GPL-3.0.
+- **[hydradns-landing](https://github.com/hydradns/hydradns-landing)** the site
+  at [hydradns.app](https://hydradns.app).
 
-## Key Features
+## What it does
 
-* **Multi-Deployment Ready**
-  Run directly on a Raspberry Pi connected to your router, or deploy as a containerized service in the cloud.
+- Blocks ads, malware and trackers at the DNS layer, before they reach a device
+- Policy engine with allow, block and redirect rules via API, CLI or an AI agent
+- Blocklists in hosts, domain and adblock formats, refreshed automatically
+- A built-in MCP server (14 tools) so an AI assistant can manage the firewall
+- Optional client-IP pseudonymisation for query logs
 
-* **Policy Enforcement Engine**
-  Define granular rules to allow, deny, or log queries. Protect networks from malware, phishing, spyware, and unwanted trackers.
-
-* **Ad & Spyware Blocking**
-  Built-in ad/tracker blocking powered by curated community and commercial blocklists.
-
-* **Blocklist Engine**
-  Import and update domain blocklists automatically, with caching for high-speed lookups.
-
-* **Shell Access & CLI Management**
-  Configure and control HydraDNS using a structured CLI shell, ideal for power users and automation.
-
-* **Central Controller & Admin Dashboard (EE)**
-  In enterprise deployments, a central dashboard provides unified policy management, visibility, and analytics across multiple sites.
-
-* **Logging & Monitoring**
-
-  * Structured logging for observability.
-  * Anonymized client IPs (in CE) for privacy compliance.
-  * Extended logging in EE for enterprise auditing.
-
-* **Resilient & Performant**
-
-  * Connection pool with multiple upstream resolvers for failover and load balancing.
-  * Real-time enforcement with **sub-millisecond lookups**.
-  * End-to-end DNS integrity with less than **5ms added latency**.
-
-* **Privacy-First by Default**
-  DNS logs anonymize client IPs in the Community Edition. Support for encrypted upstream resolvers (DoH/DoT) is built in.
-
-## Community Edition (CE)
-
-The open-source foundation includes:
-
-* SQLite-backed policy storage
-* Blocklists
-* CLI shell
-* Structured logging
-* Docker deployment
-
-The CE is aimed at **adoption, transparency, and portfolio credibility** while showcasing HydraDNS's core features.
+Pre-1.0 and moving fast. Runs with `docker compose up` on a Raspberry Pi, a NUC
+or a cloud box.
